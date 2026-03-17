@@ -40,28 +40,15 @@ As the repo grows, it will likely use a structure like this:
 /
   README.md
   powershell/
-    fundamentals/
-    automation/
-    exercises/
+    [Book Name]/
+      [Exercise Number]/
   python/
-    fundamentals/
-    automation/
-    exercises/
     learn-python-3-the-hard-way/
-      projects/
+      ex46/
         skeleton/
-  shared/
-    notes/
-    prompts/
-    reference/
 ```
 
-This structure is intentionally simple:
-
-- `fundamentals` for core concept practice
-- `automation` for practical scripts closer to real job tasks
-- `exercises` for drills, challenge problems, and course work
-- `shared` for notes, patterns, and cross-language comparisons
+This structure is intentionally simple, organized by `Language > Book > Exercise`.
 
 ## How this repo will be used
 
@@ -110,7 +97,7 @@ To keep this repo useful over time:
 
 The next useful additions would be:
 
-1. Create the top-level `powershell/`, `python/`, and `shared/` folders.
+1. Create the top-level `powershell/` and `python/` folders.
 2. Add one beginner-friendly PowerShell exercise and one equivalent Python exercise.
 3. Create a simple template for future exercises so each one has the same shape.
 
