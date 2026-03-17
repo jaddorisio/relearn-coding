@@ -40,25 +40,14 @@ As the repo grows, it will likely use a structure like this:
 /
   README.md
   powershell/
-    fundamentals/
-    automation/
-    exercises/
+    [Book Name]/
+      [Exercise Name]/
   python/
-    fundamentals/
-    automation/
-    exercises/
-  shared/
-    notes/
-    prompts/
-    reference/
+    [Book Name]/
+      [Exercise Name]/
 ```
 
-This structure is intentionally simple:
-
-- `fundamentals` for core concept practice
-- `automation` for practical scripts closer to real job tasks
-- `exercises` for drills, challenge problems, and course work
-- `shared` for notes, patterns, and cross-language comparisons
+This structure is intentionally simple, organized by `Language > Book > Exercise`. For example, `python/sample-book/sample-exercise/hello.py`.
 
 ## How this repo will be used
 
@@ -80,18 +69,13 @@ When adding new work, the default approach should be:
 
 ## Initial topic roadmap
 
-Good starting topics for this repo:
+Good starting topics for this repo could include typical learning paths:
 
-1. Variables, types, and basic operators
-2. Conditionals and loops
-3. Functions and parameters
-4. Collections: arrays, lists, dictionaries, hashtables
-5. Reading and writing files
-6. Parsing CSV, JSON, and text
-7. Error handling
-8. Working with APIs
-9. Building reusable scripts and modules
-10. Debugging and test habits
+1. Fundamentals (Variables, Conditionals, Loops, Functions)
+2. Data Structures (Collections, Hashmaps, Dictionaries)
+3. Input/Output (File reading, API interactions)
+4. Application/Scripting Structure (Reusable modules, Parsing)
+5. Practical Projects (Building tools, Scripting workflows)
 
 ## Working rules
 
@@ -107,7 +91,7 @@ To keep this repo useful over time:
 
 The next useful additions would be:
 
-1. Create the top-level `powershell/`, `python/`, and `shared/` folders.
+1. Create the top-level `powershell/` and `python/` folders.
 2. Add one beginner-friendly PowerShell exercise and one equivalent Python exercise.
 3. Create a simple template for future exercises so each one has the same shape.
 
