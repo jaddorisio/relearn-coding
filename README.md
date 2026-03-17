@@ -47,6 +47,9 @@ As the repo grows, it will likely use a structure like this:
     fundamentals/
     automation/
     exercises/
+    learn-python-3-the-hard-way/
+      projects/
+        skeleton/
   shared/
     notes/
     prompts/
