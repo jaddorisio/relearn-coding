@@ -39,6 +39,9 @@ As the repo grows, it will likely use a structure like this:
 ```text
 /
   README.md
+  AGENTS.md         # AI Tutor configuration
+  .agents/          # Interactive pedagogical AI workflows
+  docs/             # Architectural reference manuals
   powershell/
     [Book Name]/
       [Exercise Name]/
@@ -48,6 +51,18 @@ As the repo grows, it will likely use a structure like this:
 ```
 
 This structure is intentionally simple, organized by `Language > Book > Exercise`. For example, `python/sample-book/sample-exercise/hello.py`.
+
+## Architecture and Learning Framework
+
+To ensure all code strictly adheres to professional standards from the beginning, this workspace is equipped with an integrated pedagogical framework:
+
+- **Architecture Knowledge Base (`docs/architecture/`)**: A detailed encyclopedia covering core principles (SOLID, DRY), Python/PowerShell idioms, system design (failure handling), and testing strategies (TDD).
+- **Interactive AI Workflows (`.agents/workflows/`)**: Powered by an integrated AI tutor mapping directly to the architecture docs. These include slash-commands designed to force good habits:
+  - `/kata`: Practice Test-Driven Development (Red-Green-Refactor).
+  - `/design-stub`: Practice Top-Down Object-Oriented Design without writing logic first.
+  - `/refactor-review`: Identify weaknesses in old scripts and successfully repair architectural "smells".
+
+The agent's personality and contextual rules are explicitly defined in `AGENTS.md`.
 
 ## How this repo will be used
 
