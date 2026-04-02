@@ -17,7 +17,7 @@ To build muscle memory for testing *before* you code. When working on large appl
 
 ## Step 1: Assign the Kata
 1. Acknowledge the `/kata` command.
-2. If the user didn't specify a topic or language, ask them which programming language (e.g., Python, PowerShell) they want to use, and if they have a specific Kata in mind.
+2. If the user didn't specify a topic or language, ask them which programming language (e.g., Python, PowerShell, Go) they want to use, and if they have a specific Kata in mind.
 3. If they don't have a Kata in mind, suggest three classic Katas (e.g., Roman Numeral converter, FizzBuzz, String Calculator).
 4. Do NOT proceed until the user selects a Kata and language.
 
@@ -33,6 +33,12 @@ To build muscle memory for testing *before* you code. When working on large appl
 3. Do not proceed until they confirm the test is passing.
 
 ## Step 4: Refactor Phase
-1. Critique the passing code. Does it violate DRY? Can the names be improved? 
+1. Critique the passing code against the TDD and design principles in `docs/architecture/04-TESTING_STRATEGIES.md` and `docs/architecture/01-CORE_PRINCIPLES.md`. Does it violate DRY? Can the names be improved? Is there unnecessary complexity?
 2. Ask the user to refactor it.
-3. Loop back to Step 2 for the next test case, progressively adding complexity until the Kata is fully solved.
+3. Loop back to Step 2 for the next test case, progressively adding complexity.
+
+## Step 5: Completion and Reflection
+The kata is complete when the user has written **at least 5 test cases** covering the happy path *and* meaningful edge cases, and the final refactored code passes all tests.
+1. Run the full test suite one final time to confirm all tests pass.
+2. Ask the user to answer in their own words: **"What design principle did you learn or reinforce during this kata?"**
+3. Optionally suggest a follow-up: a harder kata, or re-doing the same kata in a different language to compare idioms.

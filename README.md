@@ -6,6 +6,7 @@ The main focus is:
 
 - PowerShell for real-world automation and operational scripting
 - Python for transferable programming fundamentals and general-purpose tooling
+- Go for systems-level programming with strong concurrency and explicit error handling
 - Learning by building, testing, debugging, and reviewing code
 
 ## Why this repo exists
@@ -56,11 +57,11 @@ This structure is intentionally simple, organized by `Language > Book > Exercise
 
 To ensure all code strictly adheres to professional standards from the beginning, this workspace is equipped with an integrated pedagogical framework:
 
-- **Architecture Knowledge Base (`docs/architecture/`)**: A detailed encyclopedia covering core principles (SOLID, DRY), Python/PowerShell idioms, system design (failure handling), and testing strategies (TDD).
+- **Architecture Knowledge Base (`docs/architecture/`)**: A detailed encyclopedia covering core principles (SOLID, DRY), Python/PowerShell/Go idioms, system design (failure handling), testing strategies (TDD), and classical design patterns (GoF).
 - **Interactive AI Workflows (`.agents/workflows/`)**: Powered by an integrated AI tutor mapping directly to the architecture docs. These include slash-commands designed to force good habits:
-  - `/kata`: Practice Test-Driven Development (Red-Green-Refactor).
-  - `/design-stub`: Practice Top-Down Object-Oriented Design without writing logic first.
-  - `/refactor-review`: Identify weaknesses in old scripts and successfully repair architectural "smells".
+  - `/kata`: Practice Test-Driven Development (Red-Green-Refactor) with completion criteria and reflection.
+  - `/design-stub`: Practice Top-Down Design with diagramming and language-specific interface guidance.
+  - `/refactor-review`: Identify weaknesses in old scripts via severity-ranked critique and guided demolition.
 
 The agent's personality and contextual rules are explicitly defined in `AGENTS.md`.
 
@@ -106,9 +107,10 @@ To keep this repo useful over time:
 
 The next useful additions would be:
 
-1. Create the top-level `powershell/` and `python/` folders.
-2. Add one beginner-friendly PowerShell exercise and one equivalent Python exercise.
-3. Create a simple template for future exercises so each one has the same shape.
+1. Continue working through "Learn Python The Hard Way" exercises to build fundamentals.
+2. Add a first PowerShell exercise to practice the same concepts in a different language.
+3. Try a `/kata` session to practice TDD once comfortable with functions.
+4. Create a simple template for future exercises so each one has the same shape.
 
 ---
 
