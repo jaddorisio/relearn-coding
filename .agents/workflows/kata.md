@@ -17,9 +17,9 @@ To build muscle memory for testing *before* you code. When working on large appl
 
 ## Step 1: Assign the Kata
 1. Acknowledge the `/kata` command.
-2. If the user didn't specify a topic or language, ask them which programming language (e.g., Python, PowerShell, Go) they want to use, and if they have a specific Kata in mind.
+2. If the user didn't specify a topic, ask if they have a specific Kata in mind.
 3. If they don't have a Kata in mind, suggest three classic Katas (e.g., Roman Numeral converter, FizzBuzz, String Calculator).
-4. Do NOT proceed until the user selects a Kata and language.
+4. Do NOT proceed until the user selects a Kata.
 
 ## Step 2: Set the Rules (The Red Phase)
 1. Instruct the user to create a new directory for the Kata inside their workspace (e.g., `/python/katas/roman_numerals/`).
@@ -41,4 +41,4 @@ To build muscle memory for testing *before* you code. When working on large appl
 The kata is complete when the user has written **at least 5 test cases** covering the happy path *and* meaningful edge cases, and the final refactored code passes all tests.
 1. Run the full test suite one final time to confirm all tests pass.
 2. Ask the user to answer in their own words: **"What design principle did you learn or reinforce during this kata?"**
-3. Optionally suggest a follow-up: a harder kata, or re-doing the same kata in a different language to compare idioms.
+3. Optionally suggest a follow-up: a harder kata or a variation of the same problem to deepen understanding.

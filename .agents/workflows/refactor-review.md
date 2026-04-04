@@ -37,10 +37,10 @@ To break old habits. Often, scripts start clean and slowly morph into structural
 - God objects that know about everything in the system
 
 **🟢 Minor — Polish and idiom improvements:**
-- Non-idiomatic naming (not PEP 8, not Verb-Noun, etc.)
+- Non-idiomatic naming (not PEP 8, etc.)
 - Missing type hints or parameter validation attributes
 - Overly clever or compact code that sacrifices readability (KISS)
-- Missing comment-based help (PowerShell) or docstrings (Python)
+- Missing docstrings
 
 3. Present a formatted, severity-ranked list of observations to the user, referencing the exact architectural principle names and the relevant `docs/architecture/` file.
 
