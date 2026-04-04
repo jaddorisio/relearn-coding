@@ -18,8 +18,7 @@ To cure the habit of jumping straight into coding without a plan. By only allowi
 
 ## Step 1: Feature Idea
 1. Ask the user what kind of realistic system they want to model (e.g., an ATM machine, an e-commerce cart, a deck of cards).
-2. Ask which language they want to use (Python, Go, PowerShell).
-3. Wait for their response.
+2. Wait for their response.
 
 ## Step 2: Diagram the Relationships
 1. Before any code is written, ask the user to describe or sketch how the main components of their system interact. Encourage them to think in terms of:
@@ -32,10 +31,7 @@ To cure the habit of jumping straight into coding without a plan. By only allowi
 ## Step 3: Enforce the Stub Rule
 1. State the golden rule: **"We will not write any functional logic. We will only write classes, function definitions (stubs), and print statements."**
 2. Ask the user to create the files and stub out the initial classes based on their diagram.
-3. **Language-specific guidance:**
-   - **Python:** Use `typing.Protocol` to define interfaces. Use `@dataclass` for pure data containers. Use type hints on all method signatures.
-   - **Go:** Define interfaces on the *calling* side, not the implementing side. Use single-method interfaces with `-er` suffix where applicable (e.g., `Reader`, `Validator`). Place domain code inside `internal/`.
-   - **PowerShell:** Use `[CmdletBinding()]` on functions. Define clear `param()` blocks with type constraints and validation attributes as the "interface."
+3. **Python guidance:** Use `typing.Protocol` to define interfaces. Use `@dataclass` for pure data containers. Use type hints on all method signatures.
 
 ## Step 4: Architecture Critiquing
 1. As the user creates the files and stubs, evaluate their design strictly against the principles found in `docs/architecture/01-CORE_PRINCIPLES.md`.

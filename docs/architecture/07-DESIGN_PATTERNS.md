@@ -11,13 +11,11 @@ These patterns deal with object creation, abstracting the instantiation process.
 - **What:** Encapsulates object creation logic behind a method or class. The caller requests an object by *type* or *configuration* without knowing the exact class being instantiated.
 - **When to use:** When a function needs to create different objects based on input, and you want to avoid a giant `if/elif/else` chain of constructors.
 - **Python note:** Often implemented as a simple function returning different class instances.
-- **Go note:** Use constructor functions like `NewValidator(config)` returning an interface type.
 
 ### Singleton
 - **What:** Restricts a class to a single instance throughout the application.
 - **⚠️ Considered an anti-pattern** in most modern contexts. Makes testing extremely difficult because global state cannot be easily swapped.
 - **Python note:** Modules already act as singletons. Just use module-level variables.
-- **Go note:** Use `sync.Once` if truly needed, but prefer dependency injection.
 
 ## Structural Patterns
 These patterns deal with composing classes and objects to form larger structures.
@@ -59,7 +57,6 @@ These patterns deal with how objects communicate and distribute responsibility.
 ### Template Method
 - **What:** Defines the skeleton of an algorithm in a base class but lets subclasses override specific steps.
 - **When to use:** When multiple classes share the same overall workflow but differ in specific details.
-- **Go note:** Achieved through composition and interfaces rather than inheritance.
 
 ### State
 - **What:** Allows an object to alter its behavior when its internal state changes. Each state is represented as a separate object implementing a shared interface.

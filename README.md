@@ -1,17 +1,15 @@
-# Relearning Coding with PowerShell and Python
+# Relearning Coding with Python
 
 This repository is my hands-on workspace for rebuilding programming skill through practical exercises, small projects, and notes.
 
 The main focus is:
 
-- PowerShell for real-world automation and operational scripting
 - Python for transferable programming fundamentals and general-purpose tooling
-- Go for systems-level programming with strong concurrency and explicit error handling
 - Learning by building, testing, debugging, and reviewing code
 
 ## Why this repo exists
 
-I mainly use PowerShell at work, but I want stronger programming fundamentals that transfer across languages and environments.
+I want stronger programming fundamentals that transfer across environments and real-world projects.
 
 This repo is meant to help me:
 
@@ -31,7 +29,6 @@ That means this repo will emphasize:
 - file handling, parsing, APIs, and automation workflows
 - input validation and error handling
 - debugging and testing
-- comparing how the same idea looks in PowerShell and Python
 
 ## Planned structure
 
@@ -43,24 +40,21 @@ As the repo grows, it will likely use a structure like this:
   AGENTS.md         # AI Tutor configuration
   .agents/          # Interactive pedagogical AI workflows
   docs/             # Architectural reference manuals
-  powershell/
-    [Book Name]/
-      [Exercise Name]/
   python/
     [Book Name]/
       [Exercise Name]/
 ```
 
-This structure is intentionally simple, organized by `Language > Book > Exercise`. For example, `python/sample-book/sample-exercise/hello.py`.
+This structure is intentionally simple, organized by `Book > Exercise`. For example, `python/sample-book/sample-exercise/hello.py`.
 
 ## Architecture and Learning Framework
 
 To ensure all code strictly adheres to professional standards from the beginning, this workspace is equipped with an integrated pedagogical framework:
 
-- **Architecture Knowledge Base (`docs/architecture/`)**: A detailed encyclopedia covering core principles (SOLID, DRY), Python/PowerShell/Go idioms, system design (failure handling), testing strategies (TDD), and classical design patterns (GoF).
+- **Architecture Knowledge Base (`docs/architecture/`)**: A detailed encyclopedia covering core principles (SOLID, DRY), Python idioms, system design (failure handling), testing strategies (TDD), and classical design patterns (GoF).
 - **Interactive AI Workflows (`.agents/workflows/`)**: Powered by an integrated AI tutor mapping directly to the architecture docs. These include slash-commands designed to force good habits:
   - `/kata`: Practice Test-Driven Development (Red-Green-Refactor) with completion criteria and reflection.
-  - `/design-stub`: Practice Top-Down Design with diagramming and language-specific interface guidance.
+  - `/design-stub`: Practice Top-Down Design with diagramming and Python-specific interface guidance.
   - `/refactor-review`: Identify weaknesses in old scripts via severity-ranked critique and guided demolition.
 
 The agent's personality and contextual rules are explicitly defined in `AGENTS.md`.
@@ -108,9 +102,8 @@ To keep this repo useful over time:
 The next useful additions would be:
 
 1. Continue working through "Learn Python The Hard Way" exercises to build fundamentals.
-2. Add a first PowerShell exercise to practice the same concepts in a different language.
-3. Try a `/kata` session to practice TDD once comfortable with functions.
-4. Create a simple template for future exercises so each one has the same shape.
+2. Try a `/kata` session to practice TDD once comfortable with functions.
+3. Create a simple template for future exercises so each one has the same shape.
 
 ---
 
